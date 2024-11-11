@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled placeholder="0">
+        <div class="keys-container">
+            <button class="operator" id="clear" onclick="clearDisplay ()">C</button>
+            <button class="operator" id="delete" onclick="deleteLast ()">DEL</button>
+            <button class="operator operator-key" id="divide"  onclick="appendValue ('/')">/</button>
+            <button class="operator operator-key" id="multiply"  onclick="appendValue ('*')">x</button>
+            <button class="number" id="key7" onclick="appendValue (7)">7</button>
+            <button class="number" id="key8" onclick="appendValue (8)">8</button>
+            <button class="number" id="key9" onclick="appendValue (9)">9</button>
+            <button class="operator operator-key" id="subtract" onclick="appendValue('-')">-</button>
+            <button class="number" id="key4" onclick="appendValue (4)">4</button>
+            <button class="number" id="key5" onclick="appendValue (5)">5</button>
+            <button class="number" id="key6" onclick="appendValue (6)">6</button>
+            <button class="operator operator-key" id="add" onclick="appendValue ('+')" >+</button>
+            <button class="number" id="key1" onclick="appendValue (1)">1</button>
+            <button class="number" id="key2" onclick="appendValue (2)">2</button>
+            <button class="number" id="key3" onclick="appendValue (3)">3</button>
+            <button class="operator operator-key" id="equals"  onclick="calculate('=')">=</button>
+            <button class="number" id="key0" onclick="appendValue(0)">0</button>
+            <button class="number" id="decimal"  onclick="appendValue ('.')">.</button>
+            <button class="operator" id="pi" onclick="scientificFunction('PI')">π</button>
+            <button class="operator" id="exp" onclick="appendValue ('**')">^</button>
+            <button class="operator" id="log" onclick="logFunction ('log')">log</button>
+            <button class="operator" id="sqrt" onclick="squareRoot()">√</button>
+            <button class="operator" id="sin" onclick="scientificFunction('sin')">sin</button>
+            <button class="operator" id="cos" onclick="scientificFunction('cos')">cos</button>
+            <button class="operator" id="tan" onclick="scientificFunction('tan')">tan</button>
+            <button class="operator" id="bracket" onclick="appendValue ('(')">(</button>
+            <button class="operator" id="right-bracket" onclick="appendValue (')')">)</button>
+            <button id="clr" onclick="clearDisplay()">CLR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
